@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Picker_Becerra.LoginPage"
+             Title="Portal de Acceso"
+             BackgroundColor="#003366">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="30" VerticalOptions="Center" MaximumWidthRequest="400" HorizontalOptions="Center">
+
+            <Label Text="Portal de Admisiones"
+                   FontSize="26"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White" />
+
+            <Label Text="Credenciales por defecto: admin / 1234"
+                   FontSize="13"
+                   HorizontalOptions="Center"
+                   TextColor="#D1D5DB" />
+
+            <Entry x:Name="TxtUsuario"
+                   Placeholder="Usuario"
+                   PlaceholderColor="#9CA3AF"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   Text="admin" />
+
+            <Entry x:Name="TxtPassword"
+                   Placeholder="Contraseña"
+                   PlaceholderColor="#9CA3AF"
+                   TextColor="Black"
+                   BackgroundColor="White"
+                   IsPassword="True"
+                   Text="1234" />
+
+            <Button Text="Ingresar"
+                    BackgroundColor="#005B96"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="8"
+                    HeightRequest="45"
+                    Clicked="OnLoginClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
